@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<title>Vue3</title>
+</head>
+
+<body>
+	<div id="app">
+		<button type="button" v-on:click="counter++">
+			Counter: {{ counter}}
+		</button>
+	</div>
+	<script>
+		const app = Vue.createApp({
+			data() {
+				return {
+					counter: 0
+				}
+			}
+		})
+		app.mount("#app")
+	</script>
+	<!-- 
+		Vue는 User Interface 개발을 위한 자바스크립트 프레임워크
+		html, css, javascript를 기반으로 단순하거나 복잡한 사용자 인터페이스를 효율적으로 개발하는 도움을 준다.
+		
+		1) 선언적 렌더링: Vue 템플릿 {{ }} 구문을 활용하여 데이터를 선언적으로 출력
+		2) 반응성: Vue는 Javascript 상태 변경을 자동으로 추적하고 변경이 발생하면 DOM 을 효율적으로 업데이트
+	-->
+</body>
+
+</html>

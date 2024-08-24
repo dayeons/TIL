@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="app">
+		<input type="text" v-bind:placeholder="message">
+		<hr>
+		<button type="button" v-on:click="reverseMessage">click</button>
+		<hr>
+		{{username}}<br />
+		<input type="text" v-model="username">
+		<hr>
+		<p v-if="visible">보이나요?</p>
+		<button type="button" v-on:click="visible = true">visible</button>
+		<hr>
+		<ul>
+			<li v-for="item in items">{{ item }}</li>
+		</ul>
+	</div>
+	<script>
+		const app = Vue.createApp({
+			data() {
+				return {
+					message: "값을 입력해주세요.",
+					username: "정다연",
+					visible: false,
+					items: ['사과', '딸기', '포도'],
+				}
+			},
+			methods: {
+				hello() {
+					alert("hello~")
+				},
+				reverseMessage() {
+					this.message = this.message.split("").reverse().join("")
+				}
+			},
+		})
+		app.mount("#app")
+	</script>
+	<!-- 
+		v-bind 바인딩
+		데이터(상태) 속성에 바인딩할 때 사용하는 특수 속성
+		바인딩 된 DOM은 placeholder 속성을 Vue 인스턴스의 message 속성으로 최신 상태를 유지합니다.(반응형 동작)
+		그리고 v- 접두어가 붙은 특수 속성을 디렉티브(directive)
+
+		v-on 이벤트 핸들링
+		사용자가 앱과 상호 작용할 수 있게 하기 위해 v-on 디렉티브를 사용하여 vue 인스턴스의 메소드(methods)를 호출하는 이벤트 리스너를 추가할 수 있습니다.
+
+		v-model 양뱡항 바인딩
+		vue 양식(input, select 등)의 입력과 앱의 상태(data)를 양방향으로 바인딩하는 v-model 디렉티브를 제공
+
+		조건문
+		엘리먼트 표시여부는 v-if 특수 속성(디렉티브)으로 제어
+	
+		반복문
+		v-for 는 배열에서 데이터를 가져와 아이템 목록을 표시하는 데 사용
+	-->
+</body>
+
+</html>
