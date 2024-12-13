@@ -29,6 +29,3 @@
 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*CRiH0hUGoS3aoZaIY4H2yg.png">
 
 출처: [The Benefits of Server Side Rendering Over Client Side Rendering](https://web.dev/articles/rendering-on-the-web?hl=en)
-
-
-https://yozm.wishket.com/magazine/detail/2887/
