@@ -131,9 +131,9 @@ console.log(symbol1 === symbol2);
  * key:value
  */
 const dictionary = {
-  red: "빨간색",
-  orange: "주황색",
-  yellow: "노란색",
+ red: "빨간색",
+ orange: "주황색",
+ yellow: "노란색",
 };
 console.log(dictionary);
 console.log(dictionary["red"]);
@@ -164,7 +164,7 @@ console.log(typeof iveMembersArray);
 
 /**
  * static typing -> 변수를 선언할 때 어떤 타입의 변수를 선언할 지 명시를 한다.
- * 					C
+ *
  * dynamic typing -> 변수의 타입을 명시적으로 선언하지 않고 값에 의해 타입을 "추론"한다.
  * JS -> dynamic typing
  */
