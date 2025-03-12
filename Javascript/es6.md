@@ -272,7 +272,7 @@ data.map((item, index) => console.log(item.id, item.name, item.age));
 
 ## find
 
-> arr.find( 현재값 => 조건 ) => 결과 하나의 값
+> arr.find( 현재값 => 조건 ) => 결과 하나의 값  
 > arr.findIndex( 현재값 => 조건 ) => 인덱스 번호
 
 ```js
@@ -302,8 +302,8 @@ console.log(data2);
 [Array.prototype.filter()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
 > arr.filter(callback(element[, index[, array]])[, thisArg])  
-> arr.filter( 현재값 => 조건 ) => 결과 배열출력 / 새로운 배열로 반환
-> arr.find( 현재값 => 조건 ) => 결과 하나의 값
+> arr.filter( 현재값 => 조건 ) => 결과 배열출력 / 새로운 배열로 반환  
+> arr.find( 현재값 => 조건 ) => 결과 하나의 값  
 > arr.findIndex( 현재값 => 조건 ) => 인덱스 번호
 
 ### 매개변수
