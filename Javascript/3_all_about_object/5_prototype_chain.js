@@ -141,7 +141,7 @@ console.log(Object.getPrototypeOf(ray) === FemaleIdolModel.prototype);
 console.log(Object.getPrototypeOf(ray) === IdolModel.prototype);
 console.log(FemaleIdolModel.prototype === IdolModel.prototype);
 
-FemaleIdolModel.prototype = IdolModel.prototype;  // 프로토타입 자체 바뀜
+FemaleIdolModel.prototype = IdolModel.prototype; // 프로토타입 자체 바뀜
 
 const eSeo = new FemaleIdolModel("이서", 2007);
 console.log(Object.getPrototypeOf(eSeo) === FemaleIdolModel.prototype);

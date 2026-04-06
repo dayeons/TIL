@@ -77,7 +77,7 @@ console.log(Object.values(wonYoung));
 
 const name = "안유진";
 const yuJin3 = {
-//   name: name,
-  name
+  //   name: name,
+  name,
 };
-console.log(yuJin3)
+console.log(yuJin3);

@@ -48,7 +48,7 @@ switch (englishDay) {
 
   default:
     koreaDay = "주말";
-	break;
+    break;
 }
 
-console.log(koreaDay)
+console.log(koreaDay);

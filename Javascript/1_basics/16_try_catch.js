@@ -15,7 +15,7 @@ function runner() {
     console.log("----catch-----");
     console.log(e);
   } finally {
-	console.log('------finally------')
+    console.log("------finally------");
   }
 }
 

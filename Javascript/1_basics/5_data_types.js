@@ -131,9 +131,9 @@ console.log(symbol1 === symbol2);
  * key:value
  */
 const dictionary = {
- red: "빨간색",
- orange: "주황색",
- yellow: "노란색",
+  red: "빨간색",
+  orange: "주황색",
+  yellow: "노란색",
 };
 console.log(dictionary);
 console.log(dictionary["red"]);

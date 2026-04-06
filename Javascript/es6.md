@@ -13,15 +13,15 @@
 ```js
 let a = 20;
 const b = 30;
-const str1 = a + '와' + b + '의 합은' + (a + b);
+const str1 = a + "와" + b + "의 합은" + (a + b);
 console.log(str1);
 
 const str2 = `${a} 와 ${b}의 합은 ${a + b}`;
 console.log(str2);
 
-const name = '정다연';
+const name = "정다연";
 const age = 20;
-const addr = '서울';
+const addr = "서울";
 
 const str3 = `이름은 ${name} 나이는 ${age} 집은 ${addr} 입니다.`;
 console.log(str3);
@@ -39,18 +39,18 @@ const test3 = undefined;
 
 // 같다 === , 다르다 !==
 // 삼항연산자 (조건) ? (참) : (거짓)
-const result1 = test1 === true ? '참' : '거짓';
+const result1 = test1 === true ? "참" : "거짓";
 console.log(result1);
 
 // 조건 && 조건에 대한 결과가 참일 때 결과
-const result2 = test1 && '참에대한결과';
+const result2 = test1 && "참에대한결과";
 console.log(result2);
 
 // 조건 || '거짓의 결과값'
-const result3 = test2 || '거짓의 결과';
+const result3 = test2 || "거짓의 결과";
 console.log(result3);
 
-const result4 = test3 || '값이 존재하지 않음';
+const result4 = test3 || "값이 존재하지 않음";
 console.log(result4);
 ```
 
@@ -65,7 +65,7 @@ console.log(result4);
 
 ```js
 function make1() {
-  console.log('test1');
+  console.log("test1");
 }
 make1();
 
@@ -82,7 +82,7 @@ make3(20, 30);
 
 ```js
 const make1 = () => {
-  console.log('test1');
+  console.log("test1");
 };
 make1();
 
@@ -121,14 +121,14 @@ const arr3 = arr1.concat(40, 50, 60);
 console.log(arr3);
 
 const data = [
-  { id: 1, name: '정다연', age: 20 },
-  { id: 2, name: '김다연', age: 22 },
-  { id: 3, name: '이다연', age: 23 },
+  { id: 1, name: "정다연", age: 20 },
+  { id: 2, name: "김다연", age: 22 },
+  { id: 3, name: "이다연", age: 23 },
 ];
 console.log(data[0].id, data[0].name, data[0].age);
 
 const data1 = data.concat();
-const data2 = data.concat({ id: 4, name: '박다연', age: 30 }); // 사본 + 추가
+const data2 = data.concat({ id: 4, name: "박다연", age: 30 }); // 사본 + 추가
 console.log(data1);
 console.log(data2);
 ```
@@ -161,9 +161,9 @@ arr.map((현재값, 인덱스) => {
 ```js
 const arr = [10, 20, 30];
 const data = [
-  { id: 1, name: '정다연', age: 20 },
-  { id: 2, name: '김다연', age: 22 },
-  { id: 3, name: '이다연', age: 23 },
+  { id: 1, name: "정다연", age: 20 },
+  { id: 2, name: "김다연", age: 22 },
+  { id: 3, name: "이다연", age: 23 },
 ];
 
 arr.map((item, index) => {
@@ -220,13 +220,13 @@ const result3 = arr.filter(item => item !== 40);
 console.log(result3);
 
 const data = [
-  { id: 1, name: '정다연', age: 20 },
-  { id: 2, name: '김다연', age: 22 },
-  { id: 3, name: '이다연', age: 23 },
+  { id: 1, name: "정다연", age: 20 },
+  { id: 2, name: "김다연", age: 22 },
+  { id: 3, name: "이다연", age: 23 },
 ];
 
 // 김다연만 출력
-const data1 = data.filter(item => item.name === '김다연');
+const data1 = data.filter(item => item.name === "김다연");
 console.log(data1);
 
 // id 2번 삭제
@@ -252,15 +252,15 @@ const arr2 = arr.find(item => item === 20);
 console.log(arr2);
 
 const data = [
-  { id: 1, name: '정다연', age: 20 },
-  { id: 2, name: '김다연', age: 22 },
-  { id: 3, name: '이다연', age: 23 },
+  { id: 1, name: "정다연", age: 20 },
+  { id: 2, name: "김다연", age: 22 },
+  { id: 3, name: "이다연", age: 23 },
 ];
 // id 가 1인 값
 const data1 = data.find(item => item.id === 1);
 console.log(data1);
 
-const data2 = data.findIndex(item => item.name === '정다연');
+const data2 = data.findIndex(item => item.name === "정다연");
 console.log(data2);
 ```
 
@@ -271,24 +271,24 @@ const { 키, 키, 키 } = 객체
 
 ```js
 const dog = {
-  name: '치와와',
+  name: "치와와",
   age: 3,
 };
 console.log(dog.name, dog.age);
-console.log(dog['name'], dog['age']);
+console.log(dog["name"], dog["age"]);
 
 const { name, age } = dog;
 console.log(name, age);
 
 const data = {
-  name1: '김철수',
+  name1: "김철수",
   age1: 20,
   kor: 100,
   eng: 80,
   mat: 70,
 };
 
-console.log(data.name1, data['age1'], data.kor, data['mat']);
+console.log(data.name1, data["age1"], data.kor, data["mat"]);
 
 const { name1, age1, kor, eng, mat } = data;
 console.log(name1, age1, kor, eng, mat);
@@ -297,37 +297,37 @@ console.log(name1, age1, kor, eng, mat);
 ## spread operator (전개 연산자)
 
 ```js
-const arr = ['강아지', '고양이', '토끼', '소'];
+const arr = ["강아지", "고양이", "토끼", "소"];
 const arr1 = arr.concat(); //  copy
 const arr2 = [...arr]; // copy
-const arr3 = arr.concat('뱀', '햄스터');
-const arr4 = [...arr, '우산', '딸기'];
-const arr5 = ['과자', ...arr, '사탕'];
+const arr3 = arr.concat("뱀", "햄스터");
+const arr4 = [...arr, "우산", "딸기"];
+const arr5 = ["과자", ...arr, "사탕"];
 
 console.log(arr1);
 console.log(arr2);
 console.log(arr3);
 console.log(arr4);
 console.log(arr5);
-console.log('///////////');
+console.log("///////////");
 
 const dog = {
-  name: '강아지',
+  name: "강아지",
   age: 2,
 };
 const dog1 = { ...dog }; // copy
-const dog2 = { ...dog, name: '치와와', age: 10 }; // 내용을 업데이트, 키 값을 넣으면 수정/갱신, 배열X 객체O
+const dog2 = { ...dog, name: "치와와", age: 10 }; // 내용을 업데이트, 키 값을 넣으면 수정/갱신, 배열X 객체O
 console.log(dog1);
 console.log(dog2);
 ```
 
 ```js
 const data = [
-  { id: 1, name: '1다연', age: 5 },
-  { id: 2, name: '2다연', age: 10 },
-  { id: 3, name: '3다연', age: 30 },
-  { id: 4, name: '4다연', age: 20 },
-  { id: 5, name: '5다연', age: 15 },
+  { id: 1, name: "1다연", age: 5 },
+  { id: 2, name: "2다연", age: 10 },
+  { id: 3, name: "3다연", age: 30 },
+  { id: 4, name: "4다연", age: 20 },
+  { id: 5, name: "5다연", age: 15 },
 ];
 const data1 = [...data]; // copy
 console.log(data1);
@@ -337,7 +337,7 @@ const data2 = [
   ...data,
   {
     id: 6,
-    name: '6다연',
+    name: "6다연",
     age: 16,
   },
 ];
@@ -348,7 +348,7 @@ const data3 = data.map((item, index) => {
   if (item.id === 4) {
     return {
       ...item, // 현재 4번의 데이터 copy
-      name: '7다연',
+      name: "7다연",
       age: 35,
     };
   } else {
@@ -359,7 +359,7 @@ console.log(data3);
 
 // 1번의 이름 변경
 const data4 = data.map(item =>
-  item.id === 1 ? { ...item, name: '8다연' } : item
+  item.id === 1 ? { ...item, name: "8다연" } : item
 );
 console.log(data4);
 ```
@@ -369,20 +369,20 @@ console.log(data4);
 > string.indexOf(찾을 문자열)
 
 ```js
-const arr = ['고구마', '감자', '김치', '고기', '고단백', '참치'];
-const txt1 = '고';
+const arr = ["고구마", "감자", "김치", "고기", "고단백", "참치"];
+const txt1 = "고";
 const result1 = arr.filter(item => item.indexOf(txt1) !== -1);
 console.log(result1);
 
 const data = [
-  { text: '운동을 하다' },
-  { text: '수영을 하다' },
-  { text: '저녁을 먹다' },
-  { text: '친구를 만나다' },
-  { text: '잠을 자다' },
-  { text: '밥을 하다' },
+  { text: "운동을 하다" },
+  { text: "수영을 하다" },
+  { text: "저녁을 먹다" },
+  { text: "친구를 만나다" },
+  { text: "잠을 자다" },
+  { text: "밥을 하다" },
 ];
-const txt2 = '하다';
+const txt2 = "하다";
 const result2 = data.filter(item => item.text.indexOf(txt2) !== -1);
 console.log(result2);
 ```

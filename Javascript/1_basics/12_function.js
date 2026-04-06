@@ -74,10 +74,10 @@ const multiply3 = (x, y) => x * y;
 
 console.log(multiply3(60, 4));
 
-const multiply4 = (x) => x * 2;
+const multiply4 = x => x * 2;
 console.log(multiply4(2));
 
-const multiply5 = (x) => (y) => (z) => `x: ${x} y: ${y} z: ${z}`;
+const multiply5 = x => y => z => `x: ${x} y: ${y} z: ${z}`;
 console.log(multiply5(2)(5)(7));
 
 function multiply6(x) {

@@ -65,6 +65,6 @@ console.log(`i in global scope : ${i}`);
 
 /**
  * var 는 함수 레벨 스코프만 만들어낸다.
- * 
+ *
  * let, const 함수 레벨 스코프와 블록 레벨 스코프를 만들어 낸다.
  */

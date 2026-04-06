@@ -56,7 +56,7 @@ console.log(iveMembers4);
 
 console.log(iveMembers4 === iveMembers4);
 
-console.log([...iveMembers] === iveMembers);
+// console.log([...iveMembers] === iveMembers);
 
 console.log("----------------");
 // join()
@@ -89,11 +89,11 @@ console.log(numbers);
 console.log("----------------");
 
 // map()
-console.log(iveMembers.map((x) => x));
-console.log(iveMembers.map((x) => `아이브: ${x}`));
+console.log(iveMembers.map(x => x));
+console.log(iveMembers.map(x => `아이브: ${x}`));
 
 console.log(
-  iveMembers.map((x) => {
+  iveMembers.map(x => {
     if (x === "안유진") {
       return `아이브: ${x}`;
     } else {
@@ -106,20 +106,20 @@ console.log(iveMembers);
 
 // filter()
 numbers = [1, 8, 7, 6, 3];
-console.log(numbers.filter((x) => x % 2 === 0));
+console.log(numbers.filter(x => x % 2 === 0));
 
 // find()
-console.log(numbers.find((x) => x % 2 === 0));
+console.log(numbers.find(x => x % 2 === 0));
 
 // findIndex()
-console.log(numbers.findIndex((x) => x % 2 === 0));
+console.log(numbers.findIndex(x => x % 2 === 0));
 
 // reduce()
 console.log(numbers.reduce(((p, n) => p + n, 0)));
 //                          콜백함수       , 초기값
 //                          1  2       3
 //                          4  5       6
-//                          7  ...       
+//                          7  ...
 /**
  * 1. 초기값인 0이 p에 입력된다.
  * 2. numbers 어레이의 첫번째 값인 1이 n에 입력된다.
